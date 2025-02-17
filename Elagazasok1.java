@@ -30,5 +30,12 @@ public class Elagazasok1 {
         else {
             System.out.printf("A %d kisebb, mint %d", b, a);
         }
+        
+        System.out.println("\n");
+        
+        int egesz = 30;
+        if(egesz % 10 == 0 && egesz % 3 == 0) {
+            System.out.printf("A 30 osztható 10-zel és 3-mal maradék nélkül");
+        }
     }
 }
