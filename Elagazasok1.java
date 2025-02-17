@@ -4,6 +4,8 @@
  */
 package elagazasok1;
 
+import java.util.Scanner;
+
 /**
  *
  * @author szebb
@@ -14,7 +16,19 @@ public class Elagazasok1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        System.out.println("Kérek egy számot: ");
+        Scanner be = new Scanner(System.in);
+        int a = be.nextInt();
+        
+        System.out.println("Kérek egy másik számot");
+        int b = be.nextInt();
+        
+        if(a < b) {
+            System.out.printf("A %d kisebb, mint %d", a, b);
+        }
+        else {
+            System.out.printf("A %d kisebb, mint %d", b, a);
+        }
     }
-    
 }
