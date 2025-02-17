@@ -31,7 +31,6 @@ public class Elagazasok1 {
             System.out.printf("A %d kisebb, mint %d", b, a);
         }
         
-        System.out.println("\n");
         
         int egesz = 30;
         if(egesz % 10 == 0 && egesz % 3 == 0) {
@@ -48,6 +47,7 @@ public class Elagazasok1 {
             System.out.println("A 27 nem osztható 10-zel és 3-mal maradék nélkül");
 
         }
+        System.out.println("\n");
         
         double szazalek = 60.0;
         if(szazalek >= 80) {
@@ -65,5 +65,73 @@ public class Elagazasok1 {
         else {
             System.out.println("Elégtelen");
         }
+        
+        
+        // Ternáris operátor
+        // (feltétel) ? igaz: hamis
+        String eredmeny = (szazalek % 2 == 0) ? "Páros" : "Páratlan";
+        
+        // Switch-case
+        String honap = "Február";
+        switch(honap) {
+            case "Január":
+                System.out.println("01");
+                break;
+            case "Február":
+                System.out.println("02");
+                break;
+            case "Március":
+                System.out.println("03");
+                break;
+            default:
+                System.out.println("Nincs ilyen hónap");
+                break;
+        }
+        // Felhasználó megad egy szorszámot, válaszul megkapja az melyik hónap
+        System.out.println("Adja meg a hónap sorszámát pl.: 6");
+        Scanner adat = new Scanner(System.in);
+        int bekertAdat = adat.nextInt();
+        
+        switch(bekertAdat) {
+            case 1:
+                System.out.println("Január");
+                break;
+            case 2:
+                System.out.println("Február");
+                break;
+            case 3:
+                System.out.println("Március");
+                break;
+            case 4:
+                System.out.println("Április");
+                break;
+            case 5:
+                System.out.println("Május");
+                break;
+            case 6:
+                System.out.println("Június");
+                break;
+            case 7:
+                System.out.println("Július");
+                break;
+            case 8:
+                System.out.println("Augusztus");
+                break;
+            case 9:
+                System.out.println("Szeptember");
+                break;
+            case 10:
+                System.out.println("Október");
+                break;
+            case 11:
+                System.out.println("November");
+                break;
+            case 12:
+                System.out.println("December");
+                break;
+            default:
+                System.out.println("Nincs ilyen hónap");
+                break;
+        }       
     }
 }
